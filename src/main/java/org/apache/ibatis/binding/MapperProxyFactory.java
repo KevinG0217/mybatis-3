@@ -24,10 +24,18 @@ import org.apache.ibatis.session.SqlSession;
 
 /**
  * @author Lasse Voss
+ * @desc MapperProxyFactory主要负责创建代理对象
  */
 public class MapperProxyFactory<T> {
 
+    /**
+     * 接口对应的class对象
+     */
     private final Class<T> mapperInterface;
+
+    /**
+     * 缓存，key是接口中方法对应的method对象，mapper是对应的MapperMethod方向
+     */
     private final Map<Method, MapperMethod> methodCache = new ConcurrentHashMap<>();
 
     public MapperProxyFactory(Class<T> mapperInterface) {
@@ -44,6 +52,7 @@ public class MapperProxyFactory<T> {
 
     @SuppressWarnings("unchecked")
     protected T newInstance(MapperProxy<T> mapperProxy) {
+        // 构建MapperProxy对象，每次调用都会创建新的MapperProxy对象
         return (T) Proxy.newProxyInstance(mapperInterface.getClassLoader(), new Class[]{mapperInterface}, mapperProxy);
     }
 

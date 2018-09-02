@@ -15,16 +15,15 @@
  */
 package org.apache.ibatis.type;
 
-import java.sql.Clob;
+import org.apache.ibatis.executor.result.ResultMapException;
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.sql.SQLException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.*;
-
-import org.apache.ibatis.executor.result.ResultMapException;
-import org.junit.Assert;
-import org.junit.Test;
 
 public class UnknownTypeHandlerTest extends BaseTypeHandlerTest {
 

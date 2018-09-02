@@ -15,10 +15,6 @@
  */
 package org.apache.ibatis.submitted.named_constructor_args;
 
-import static org.junit.Assert.*;
-
-import java.io.Reader;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.Configuration;
@@ -27,6 +23,10 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.Reader;
+
+import static org.junit.Assert.assertEquals;
 
 public class NamedConstructorArgsTest {
 

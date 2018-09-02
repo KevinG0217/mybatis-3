@@ -15,14 +15,6 @@
  */
 package org.apache.ibatis.submitted.lazy_deserialize;
 
-import static org.junit.Assert.*;
-
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Reader;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.executor.ExecutorException;
 import org.apache.ibatis.io.Resources;
@@ -32,6 +24,10 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.*;
+
+import static org.junit.Assert.*;
 
 /**
  *

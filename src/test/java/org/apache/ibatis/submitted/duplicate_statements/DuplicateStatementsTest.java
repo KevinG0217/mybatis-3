@@ -15,9 +15,6 @@
  */
 package org.apache.ibatis.submitted.duplicate_statements;
 
-import java.io.Reader;
-import java.util.List;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.RowBounds;
@@ -28,6 +25,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import java.io.Reader;
+import java.util.List;
 
 public class DuplicateStatementsTest {
 

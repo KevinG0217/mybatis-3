@@ -15,16 +15,15 @@
  */
 package org.apache.ibatis.reflection;
 
-import static org.junit.Assert.*;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.io.Serializable;
 import java.util.List;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import static com.googlecode.catchexception.apis.BDDCatchException.*;
-import static org.assertj.core.api.BDDAssertions.then;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class ReflectorTest {
 

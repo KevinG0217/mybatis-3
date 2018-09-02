@@ -43,7 +43,14 @@ import java.util.*;
  */
 public class MapperMethod {
 
+    /**
+     * 记录了sql语句的名称和类型
+     */
     private final SqlCommand command;
+
+    /**
+     * Mapper接口中对应方法的相关信息
+     */
     private final MethodSignature method;
 
     public MapperMethod(Class<?> mapperInterface, Method method, Configuration config) {
@@ -219,10 +226,10 @@ public class MapperMethod {
         private final SqlCommandType type;
 
         public SqlCommand(Configuration configuration, Class<?> mapperInterface, Method method) {
+            // sql语句名称由Mapper接口名称与对应的方法名称主城
             final String methodName = method.getName();
             final Class<?> declaringClass = method.getDeclaringClass();
-            MappedStatement ms = resolveMappedStatement(mapperInterface, methodName, declaringClass,
-                    configuration);
+            MappedStatement ms = resolveMappedStatement(mapperInterface, methodName, declaringClass, configuration);
             if (ms == null) {
                 if (method.getAnnotation(Flush.class) != null) {
                     name = null;
@@ -251,7 +258,10 @@ public class MapperMethod {
         private MappedStatement resolveMappedStatement(Class<?> mapperInterface, String methodName,
                                                        Class<?> declaringClass, Configuration configuration) {
             String statementId = mapperInterface.getName() + "." + methodName;
+            // 检测是否有该名称的sql语句
             if (configuration.hasStatement(statementId)) {
+                // 从configuration.mapperStatements集合中查找对应的MapperStatements对象
+                // MapperStatements对象封装了sql语句相关的信息，在初始化时创建
                 return configuration.getMappedStatement(statementId);
             } else if (mapperInterface.equals(declaringClass)) {
                 return null;
@@ -348,6 +358,7 @@ public class MapperMethod {
 
         /**
          * return whether return type is {@code java.util.Optional}
+         *
          * @return return {@code true}, if return type is {@code java.util.Optional}
          * @since 3.5.0
          */

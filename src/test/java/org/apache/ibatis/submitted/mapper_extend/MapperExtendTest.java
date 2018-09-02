@@ -15,8 +15,6 @@
  */
 package org.apache.ibatis.submitted.mapper_extend;
 
-import java.io.Reader;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.binding.BindingException;
 import org.apache.ibatis.io.Resources;
@@ -27,8 +25,9 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.io.Reader;
+
 import static com.googlecode.catchexception.apis.BDDCatchException.*;
-import static org.assertj.core.api.BDDAssertions.then;
 
 public class MapperExtendTest {
 

@@ -15,8 +15,6 @@
  */
 package org.apache.ibatis.submitted.lazyload_proxyfactory_comparison;
 
-import java.io.Reader;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -26,6 +24,8 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.Reader;
 
 public abstract class AbstractLazyTest {
 

@@ -15,10 +15,11 @@
  */
 package org.apache.ibatis.jdbc;
 
-import static org.apache.ibatis.jdbc.SelectBuilder.*;
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+
+import static org.apache.ibatis.jdbc.SelectBuilder.*;
+import static org.apache.ibatis.jdbc.SelectBuilder.SQL;
+import static org.junit.Assert.assertEquals;
 
 public class SelectBuilderTest {
 

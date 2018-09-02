@@ -15,21 +15,17 @@
  */
 package org.apache.ibatis.submitted.deferload_common_property;
 
-import static org.junit.Assert.*;
+import org.apache.ibatis.BaseDataTest;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.*;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.ibatis.BaseDataTest;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.ResultContext;
-import org.apache.ibatis.session.ResultHandler;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.Assert.assertNotNull;
 
 public class CommonPropertyDeferLoadError {
 

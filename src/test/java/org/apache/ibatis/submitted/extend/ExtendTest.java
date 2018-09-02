@@ -15,10 +15,6 @@
  */
 package org.apache.ibatis.submitted.extend;
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.Reader;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -26,6 +22,10 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.Reader;
+
+import static org.junit.Assert.assertEquals;
 
 public class ExtendTest {
 

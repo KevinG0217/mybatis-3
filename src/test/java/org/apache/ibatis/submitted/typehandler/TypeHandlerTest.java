@@ -15,10 +15,6 @@
  */
 package org.apache.ibatis.submitted.typehandler;
 
-import static org.junit.Assert.*;
-
-import java.io.Reader;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.builder.BuilderException;
 import org.apache.ibatis.io.Resources;
@@ -31,6 +27,11 @@ import org.apache.ibatis.submitted.typehandler.Product.ProductIdTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.Reader;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class TypeHandlerTest {
 

@@ -15,9 +15,6 @@
  */
 package org.apache.ibatis.submitted.automapping;
 
-import java.io.Reader;
-import java.util.List;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.AutoMappingBehavior;
@@ -27,6 +24,9 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.Reader;
+import java.util.List;
 
 public class AutomappingTest {
 

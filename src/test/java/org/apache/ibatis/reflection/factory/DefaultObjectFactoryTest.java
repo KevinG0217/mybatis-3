@@ -15,21 +15,11 @@
  */
 package org.apache.ibatis.reflection.factory;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
-
 import org.apache.ibatis.reflection.ReflectionException;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.*;
 
 /**
  * DefaultObjectFactoryTest

@@ -15,12 +15,6 @@
  */
 package org.apache.ibatis.submitted.xml_external_ref;
 
-import static org.junit.Assert.*;
-
-import java.io.IOException;
-import java.io.Reader;
-import java.sql.SQLException;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.cache.Cache;
 import org.apache.ibatis.datasource.unpooled.UnpooledDataSource;
@@ -33,6 +27,13 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 import org.junit.Test;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.sql.SQLException;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 public class MultipleCrossIncludeTest {
 

@@ -15,19 +15,16 @@
  */
 package org.apache.ibatis.submitted.cglib_lazy_error;
 
-import java.io.Reader;
-import java.sql.Connection;
-import java.sql.DriverManager;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.jdbc.ScriptRunner;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.Reader;
 
 public class CglibNPETest {
 

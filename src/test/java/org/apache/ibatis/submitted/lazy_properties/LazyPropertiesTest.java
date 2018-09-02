@@ -15,12 +15,6 @@
  */
 package org.apache.ibatis.submitted.lazy_properties;
 
-import static org.junit.Assert.*;
-
-import java.io.Reader;
-import java.util.Collections;
-import java.util.HashSet;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.executor.loader.ProxyFactory;
 import org.apache.ibatis.executor.loader.cglib.CglibProxyFactory;
@@ -32,6 +26,13 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.Reader;
+import java.util.Collections;
+import java.util.HashSet;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class LazyPropertiesTest {
 

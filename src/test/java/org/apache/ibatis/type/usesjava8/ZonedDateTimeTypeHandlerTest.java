@@ -15,16 +15,17 @@
  */
 package org.apache.ibatis.type.usesjava8;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
-
-import java.sql.Timestamp;
-import java.time.ZonedDateTime;
-
 import org.apache.ibatis.type.BaseTypeHandlerTest;
 import org.apache.ibatis.type.TypeHandler;
 import org.apache.ibatis.type.ZonedDateTimeTypeHandler;
 import org.junit.Test;
+
+import java.sql.Timestamp;
+import java.time.ZonedDateTime;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.mockito.Mockito.*;
 
 public class ZonedDateTimeTypeHandlerTest extends BaseTypeHandlerTest {
 

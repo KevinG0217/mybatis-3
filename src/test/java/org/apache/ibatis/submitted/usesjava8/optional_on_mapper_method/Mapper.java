@@ -17,7 +17,6 @@ package org.apache.ibatis.submitted.usesjava8.optional_on_mapper_method;
 
 import org.apache.ibatis.annotations.Select;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface Mapper {

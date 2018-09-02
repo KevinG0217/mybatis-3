@@ -15,9 +15,6 @@
  */
 package org.apache.ibatis.submitted.enumtypehandler_on_map;
 
-import java.io.Reader;
-import java.util.List;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -28,6 +25,9 @@ import org.apache.ibatis.submitted.enumtypehandler_on_map.PersonMapper.TypeName;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.Reader;
+import java.util.List;
 
 public class EnumTypeHandlerTest {
 

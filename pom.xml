@@ -197,17 +197,11 @@
             </exclusions>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/ru.yandex.qatools.embed/postgresql-embedded -->
         <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>2.1.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hsqldb</groupId>
-            <artifactId>hsqldb</artifactId>
-            <version>1.8.0.10</version>
+            <groupId>ru.yandex.qatools.embed</groupId>
+            <artifactId>postgresql-embedded</artifactId>
+            <version>1.23</version>
             <scope>test</scope>
         </dependency>
 
@@ -256,6 +250,24 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core-java8</artifactId>
+            <version>1.0.0m1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>eu.codearte.catch-exception</groupId>
+            <artifactId>catch-exception</artifactId>
+            <version>1.4.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>2.18.3</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -272,7 +284,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <excludedGroups>${maven.surefire.excludeGroups}</excludedGroups>
-                    <argLine>${argLine} -Xmx2048m</argLine>
+                    <argLine> -Xmx2048m</argLine>
                     <systemProperties>
                         <property>
                             <name>derby.stream.error.file</name>

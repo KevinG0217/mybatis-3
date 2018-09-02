@@ -15,10 +15,6 @@
  */
 package org.apache.ibatis.submitted.maptypehandler;
 
-import java.io.Reader;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.ibatis.BaseDataTest;
 import org.apache.ibatis.exceptions.PersistenceException;
 import org.apache.ibatis.io.Resources;
@@ -28,6 +24,10 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.Reader;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * See issue #135
