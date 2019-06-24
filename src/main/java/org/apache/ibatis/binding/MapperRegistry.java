@@ -71,7 +71,7 @@ public class MapperRegistry {
     public <T> void addMapper(Class<T> type) {
         // 检测type是否是接口
         if (type.isInterface()) {
-            // 洁厕是否已经加载过
+            // 检测是否已经加载过
             if (hasMapper(type)) {
                 throw new BindingException("Type " + type + " is already known to the MapperRegistry.");
             }
